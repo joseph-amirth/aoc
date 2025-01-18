@@ -1,7 +1,6 @@
 let read_file file_name =
   let file_handle = open_in file_name in
   let rec read_file_impl () =
-    let open Option in
     let maybe_line =
       try Some (input_line file_handle) with End_of_file -> None
     in
