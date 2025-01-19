@@ -1,1 +1,1 @@
-(executable (name main))
+(executable (name main) (libraries base stdio))
